@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+   <!--Meta Tags requeridas pelo bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listagem</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel='stylesheet' href='stylesheets/style.css' />
+  </head>
+  <body>
+      <nav class="navbar fixed-top" style="background-color: #789EA0">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: #FFF; font-weight:bold; font-size: 30px;" href="/formularioInclusaoNovoCliente">Inclusão de Novo Cliente </a>
+          <a class="navbar-brand" style="color: #FFF; font-weight:bold; padding-right: 60px; font-size: 30px;"  href="/listaClientesEJS">Listagem de Clientes</a>
+        </div>
+      </nav>
+
+    <h1 style="margin-top: 70px;">Inclusão Cliente</h1>
+
+    <form method="post" action="/inclusaoNovoCliente" style="margin-top:10px ;">
+        <div class=" col-md-5 mb-3">
+          <label for="nomeClie" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nomeClie" name="nomeClie" placeholder="Digite seu nome:">
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="cpfClie" class="form-label" style="font-size: 18px;" >CPF:</label>
+            <input type="text" class="form-control" id="cpfClie" name="cpfClie" placeholder="Digite seu CPF: ">
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="dataNiverClie" class="form-label" style="font-size: 18px;" >Data Aniversário:</label>
+            <input type="text" class="form-control" id="dataNiverClie" name="dataNiverClie" placeholder="Digite sua data de aniversário: ">
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="emailClie" class="form-label" style="font-size: 18px;" >Email:</label>
+            <input type="email" class="form-control" id="emailClie" name="emailClie" placeholder="Digite seu e-mail ">
+          </div>
+
+          <button type="submit" class="btn btn-primary">INCLUIR</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+</html>
